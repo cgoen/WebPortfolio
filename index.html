@@ -3,358 +3,416 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Goen's Final Project!</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Goen's Web Portfolio!</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="images/apple-touch-icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oxygen:wght@300;400;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oxygen:wght@300;400;700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-  <!--Light/dark theme change-->
-  <input type="radio" id="dark-theme" name="theme-change" checked>
-  <input type ="radio" id="light-theme" name="theme-change">
-  <!--nav bar-->
-  <nav class="navbar navbar-dark  navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Goen Choi</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon" ></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav nav-underline">
-          <li class="Home">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
+<!--div for background image-->
+<div id="background">
+</div>
+<!--Light/dark theme change-->
+<input type="radio" id="dark-theme" name="theme-change" checked>
+<input type="radio" id="light-theme" name="theme-change">
+<!--nav bar-->
+<nav class="navbar navbar-dark  navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/logo-6.png" alt="Goen Choi logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav nav-underline">
+        <li class="Home">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#About">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Resume">Resume</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Projects">Projects</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--hero section-->
+<section id="hero-section" class="hero-full-height">
+  <div class="hero-section-content">
+    <h1 class="m-4">Hello.</h1>
+    <h1>I'm Goen.</h1>
+    <p>Student on a journey to become a creative software developer.
+      I like to think that the sky is the limit and think outside the box!</p>
+    <a href="#About" class="click-buttons px-5">Learn more about me</a>
+  </div>
+</section>
+<section id="About" class="scroll">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-xl-6 d-flex justify-content-center align-items-center">
+        <img src="images/image-of-me.jpeg" alt="image of Goen" id="image-of-me">
+      </div>
+      <div class="col-12 col-xl-6">
+        <h2>Hi. I'm Goen.</h2>
+        <p>First of all, welcome to my very first website that I made for myself! I am currently a student learning
+          software and web development at
+          Camosun College located on the beautiful Vancouver Island of BC, Canada. </p>
+        <p>I have another educational background in radiation therapy and I have worked as a radiation therapist at BC
+          Cancer Victoria
+          for 3 years. Although radiation therapist was an amazing career, I realized I wanted more creativity and
+          problem-solving in my career, so that when my curiosity for programming stated!
+          I enjoy breaking down problems and creating solutions through programming.
+        </p>
+        <p>Currently, I have acquired skills of writing object-oriented programming (OOP) in Java. Through OOP, I am
+          able to write organized and readable code.
+          As you have seen through this webpage, creating interactive & responsive websites with HTML and CSS is another
+          skill I have gained. I had a lot of fun making this web-page!
+          Expanding my knowledge in a entirely different field has been a lot of fun and I cannot wait where this
+          journey takes me to!
+        </p>
+        <p>
+          Aside from computers, I love to be outdoors hiking, running, camping, or just lying in the sun. I am a garlic
+          parent!
+          I started growing garlics last year, and it's been so much fun. Baking and cooking vegetarian food is another
+          passion of mine.
+          If you want some recipes I love, send me a message!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="Resume" class="scroll">
+  <h1 class="text-center mb-5">Resume</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6 resume-sub-heading">
+        <h3>Technical Skills</h3>
+      </div>
+      <div class="col-12 col-md-6 skills-content">
+        <ul class="resume-ul" id="tech-skill-ul">
+          <li>Develop and style responsive web pages using HTML, CSS.</li>
+          <li>Write effective and efficient programs using Java.</li>
+          <li>Remotely access servers securely using SSH protocols and VNC app.</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6 col-xl-6 resume-sub-heading">
+        <h3>Professional Skills</h3>
+      </div>
+      <div class="col-12 col-md-6 col-xl-6 skills-content">
+        <ul class="resume-ul" id="prof-skill-ul">
+          <li>Communicate effectively using virtual telework communication tools such as Zoom, Teams.</li>
+          <li>Perform professional written and verbal communication using appropriate terminology for the selected
+            audience.
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#About">About</a>
+          <li>Collaborate in a team effectively using clear communication and delegation.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-xl-6 resume-sub-heading">
+        <h3>Education</h3>
+      </div>
+      <div class="col-12 col-md-6 col-xl-6 education-content ">
+        <div>
+          <p class="fw-bold">Camosun College</p>
+          <p class>Camosun College | Victoria, BC Sep 2024 | – Expected completion Sep 2026</p>
+          <ul class="resume-ul" id="camosun-ul">
+            <li>Developed effective and efficient programming skills with Java</li>
+            <li>Built interactive web pages using html and styled it with CSS</li>
+            <li>Accessed servers remotely and securely using SSH protocols, terminal, and VNC app.</li>
+          </ul>
+          <p class="fw-bold">British Columbia Institute of Technology</p>
+          <p class>British Columbia Institute of Technology | Burnaby, BC | Sep 2019 – May 2021</p>
+          <ul class="resume-ul">
+            <li>Graduated with degree of distinction, Canadian Association of Medical Radiation Technologist (CAMRT)
+              certification, and CAMRT Foundation award for excellent progress during clinical rotations.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 resume-sub-heading">
+        <h3>Work Experience</h3>
+      </div>
+      <div class="col-12 col-md-6 skills-content">
+        <ul class="resume-ul-last">
+          <li>Delivered radiation treatments safely by communicating clear instructions to patients.</li>
+          <li>Collaborated effectively with the multidisciplinary health care team using accurate verbal and written
+            communications.
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#Resume">Resume</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#Projects">Projects</a>
-          </li>
-          <li>
-            <a class="nav-link" href="#Contact">Contact</a>
+          <li>Showed initiative in professional development by joining a new department and learning the new
+            protocols.
           </li>
         </ul>
       </div>
     </div>
-  </nav>
-<!--hero section-->
-  <section id="hero-section" class="hero-full-height">
-    <div class="hero-section-content">
-      <h1 class="me-4">Hello.</h1>
-      <h1>I'm Goen.</h1>
-      <p>Student on a journey to become a creative software developer. Problem-solving and being outdoors are my passion! </p>
-      <a href="#About" class="click-buttons">Click to learn more</a>
-    </div>
-  </section>
-  <section id="About" class ="">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-xl-6 d-flex justify-content-center align-items-center scroll">
-          <img src="images/image-of-me.jpeg" alt="image of Goen" id="image-of-me">
-        </div>
-        <div class="col-12 col-xl-6 scroll">
-          <h2 >Hi. I'm Goen.</h2>
-          <p>First of all, welcome to my very first website! I am currently a student learning software and web development at
-            Camosun College located on the beautiful Vancouver Island of BC!.</p>
-          <p>I have a educational background in radiation therapy. I have worked as a radiation therapist at BC Cancer Victoria
-          for 3 years. During my career, I realized I wanted more problem-solving in my career so that when my passion for programming stated!
-          </p>
-          <p>Currently, I have acquired skills writing efficient code in Java, and creating interactive & responsive websites with HTML and CSS. </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="Resume" class ="">
-    <h1 class="text-center mb-5">Resume</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6 resume-sub-heading" >
-          <h3>Technical Skills</h3>
-        </div>
-        <div class="col-12 col-md-6 skills-content">
-            <ul class="resume-ul" id="tech-skill-ul">
-              <li>Develop and style responsive web pages using HTML, CSS. </li>
-              <li>Write effective and efficient programs using Java. </li>
-              <li>Remotely access servers securely using SSH protocols and VNC app. </li>
-            </ul>
-        </div>
-        <div class="col-12 col-md-6 col-xl-6 resume-sub-heading">
-          <h3>Professional Skills</h3>
-        </div>
-        <div class="col-12 col-md-6 col-xl-6 skills-content">
-          <ul class="resume-ul" id="prof-skill-ul">
-            <li>Communicate effectively using virtual telework communication tools such as Zoom, Teams.  </li>
-            <li>Perform professional written and verbal communication using appropriate terminology for the selected audience. </li>
-            <li>Collaborate in a team effectively using clear communication and delegation. </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 col-xl-6 resume-sub-heading">
-          <h3>Education</h3>
-        </div>
-        <div class="col-12 col-md-6 col-xl-6 education-content ">
-          <div>
-            <p class="fw-bold">Camosun College</p>
-            <p class>Camosun College | Victoria, BC	Sep 2024 | – Expected completion Sep 2026</p>
-            <ul class="resume-ul" id="camosun-ul">
-              <li>Developed effective and efficient programming skills with Java </li>
-              <li>Built interactive web pages using html and styled it with CSS</li>
-              <li>Accessed servers remotely and securely using SSH protocols, terminal, and VNC app.</li>
-            </ul>
-            <p class="fw-bold">British Columbia Institute of Technology</p>
-            <p class>British Columbia Institute of Technology | Burnaby, BC | Sep 2019 – May 2021</p>
-            <ul class="resume-ul">
-              <li>Graduated with degree of distinction, Canadian Association of Medical Radiation Technologist (CAMRT)
-                certification, and CAMRT Foundation award for excellent progress during clinical rotations. </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-6 resume-sub-heading" >
-          <h3>Work Experience</h3>
-        </div>
-        <div class="col-12 col-md-6 skills-content">
-          <ul class="resume-ul-last">
-            <li>Delivered radiation treatments safely by communicating clear instructions to patients.  </li>
-            <li>Collaborated effectively with the multidisciplinary health care team using accurate verbal and written communications. </li>
-            <li>Showed initiative in professional development by joining a new department and learning the new protocols.  </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!--Resume download button-->
-    <a href="goen_resume.pdf" target="_blank" class="click-buttons" id="resume-button">Download resume</a>
-    <!--Skills progress bar-->
-    <div class="progress-bar-container">
-      <h3 class="m-5">Languages</h3>
-      <div class="progress-bar" id="java-progress-bar">
-        <h4>Java</h4>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plug-fill plug" viewBox="0 0 16 16">
-          <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.08 2.08 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.92 1.92 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0"/>
-        </svg>
-        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar-status" id="java-progress-bar-status" style="width:0"></div>
-        </div>
-      </div>
-      <div class="progress-bar" id="html-progress-bar">
-        <h4>HTML & CSS</h4>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plug-fill plug" viewBox="0 0 16 16">
-          <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.08 2.08 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.92 1.92 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0"/>
-        </svg>
-        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bar" style="width: 0" id="html-progress-bar-status"></div>
-        </div>
-      </div>
-      <div class="progress-bar" id="py-progress-bar">
-        <h4>Python</h4>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plug-fill plug" viewBox="0 0 16 16">
-          <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.08 2.08 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.92 1.92 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0"/>
-        </svg>
-        <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-          <div id="py-progress-bar-status" class="progress-bar" style="width: 0"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="Projects" class="">
-    <h1 class="text-center mb-5">Projects</h1>
-    <div class="container">
-      <div class="row" data-masonry='{"percentPosition": true }'>
-        <!--project1-->
-        <div class="col-12 col-md-6 col-xl-4 card-container">
-          <div class="card">
-            <!--Card has front and back to have flip animation-->
-            <div class="card-front">
-              <img src="images/raspberry-pi-project%20copy.jpeg" class="card-img-top" alt="Image of Raspberry Pi project.">
-              <div class="card-body">
-                <h4>Counting Pi</h4>
-              </div>
-            </div>
-            <div class="card-back">
-              <h4>Counting Pi</h4>
-              <p>
-                This was one of my lab projects for my operating systems course. I set up a Raspbian operating system on the
-                raspberry pi. Wrote a program that counts up when I pushed the button on the Pi, and different color LED light
-                would turn on depending on if the current number is even, odd, or the power of two.
-              </p>
-              <p>Click on this card to view my code!</p>
-            </div>
-          </div>
-        </div>
-        <!--project2-->
-        <div class="col-12 col-md-6 col-xl-4 card-container">
-          <div class="card">
-            <!--Card has front and back to have flip animation-->
-            <div class="card-front">
-              <img src="images/vnc_access.png" class="card-img-top" alt="Image of VNC server access project.">
-              <div class="card-body">
-                <h4>VNC Server Access</h4>
-              </div>
-            </div>
-            <div class="card-back">
-              <h4>VNC Server Access</h4>
-              <p>
-                This was another project of my operating systems course. We installed a Linux operating system on the school
-                computer and set up a secure-shell access to this server.
-                Then we installed a VNC server software on this computer to allow remote access to this server with the ability
-                to view the desktop display of the server.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--project3-->
-        <div class="col-12 col-md-6 col-xl-4 card-container">
-          <a href="https://deepblue.camosun.bc.ca/~c0543503/Goen_Choi_Midterm/" target="_blank">
-            <div class="card">
-            <!--Card has front and back to have flip animation-->
-              <div class="card-front">
-                <img src="images/mid-term-project.png" class="card-img-top" alt="Image of mid term website project.">
-                <div class="card-body">
-                  <h4>Green Tea Website</h4>
-                </div>
-              </div>
-              <div class="card-back">
-                <h4>Green Tea Website</h4>
-                <p>
-                  This was a midterm project for my web development class, and it is the very first web-site I made!
-                  This project involved choosing a content and building a website from scratch using HTML and CSS.
-                  It was my first attempt at responsive design to different media screen sizes. Through this project, I developed my
-                  HTML, CSS and design skills.
-                </p>
-                <p>Click on this card to view the webpage!</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!--project 4-->
-        <div class="col-12 col-md-6 col-xl-4 card-container">
-          <a href="https://github.com/cgoen/Pokemon.java" target="_blank">
-            <div class="card">
-              <!--Card has front and back to have flip animation-->
-              <div class="card-front">
-                <img src="images/pokemon.jpg" class="card-img-top" alt="Image of Pikachu figure.">
-                <div class="card-body">
-                  <h4>Pokemon Game Simulation with Object-Oriented Programming</h4>
-                </div>
-              </div>
-              <div class="card-back">
-                <h4>Pokemon Game Simulation with Object-Oriented Programming</h4>
-                <p>
-                  I created this Pokemon game simulation using Java and Objected Oriented Programming.
-                  This involved creating classes for Pokemons, Trainers, and Battle. The simulation allows to create trainer objects
-                  and create Pokemon objects and add it to the trainer's team. Also can simulate battles between different Pokemons.
-                </p>
-                <p>Click on the card to view this project!</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!--project5-->
-        <div class="col-12 col-md-6 col-xl-4 card-container">
-          <div class="card">
-            <!--Card has front and back to have flip animation-->
-            <div class="card-front">
-              <img src="images/work-schedule.png" class="card-img-top" alt="Image of work schedule.">
-              <div class="card-body">
-                <h4>Future Project - Work Schedule Webpage</h4>
-              </div>
-            </div>
-            <div class="card-back">
-              <h4>Future Project - Work Schedule Webpage</h4>
-              <p>
-                After I gain back end web development skills, I would like to develop a webpage for my workplace.
-                Currently, my work uses an Excel sheet that you can only access while on work-site ,which makes it difficult
-                to view your schedule when you're coming back from a vacation or if you are a casual employee.
-                I plan to create a web page that staff can access from home and also request shift changes through the website.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!--project6-->
-        <div class="col-12 col-md-6 col-xl-4 card-container">
-          <div class="card">
-            <!--Card has front and back to have flip animation-->
-            <div class="card-front">
-              <img src="images/vacation-picks.jpg" class="card-img-top" alt="Image of person writing in calendar.">
-              <div class="card-body">
-                <h4>Future Project - Vacation Picks Calendar App</h4>
-              </div>
-            </div>
-            <div class="card-back">
-              <h4>Future Project - Vacation Picks Calendar App</h4>
-              <p>
-                When I gain app development skills, I would like to create an app for vacation picks at work.
-                Currently, we use an old-fashioned paper book for vacation picks. I would like to create an app with a
-                calendar so during vacation picks, staff can submit their picks and depending on their seniority, the app will decide
-                who gets the pick.
-              </p>
-              <p>
-                The app will allow the manager to enter in employees' seniority, lock down dates that are full, and allow other employees
-                to see what others have picked.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="Contact" class="text-center">
-    <form id="contact-form">
-      <h1>Contact Me</h1>
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" placeholder="First name" id="name">
-        </div>
-        <div class="col-12 col-md-6">
-          <label for="email">E-mail</label>
-          <input type="email" class="form-control" placeholder="E-mail" id="email">
-        </div>
-        <div class="col-12">
-          <label for="message">Message</label>
-          <textarea class="form-control" placeholder="Send me a message!" id="message"></textarea>
-          <button type="submit" id="submit-button" class="click-buttons my-3">Send!</button>
-        </div>
-      </div>
-    </form>
-  </section>
-  <!--Light/Dark theme labels-->
-  <div class="theme-change-labels">
-    <label for="dark-theme" id="dark-theme-label" class="theme-label click-buttons">
-      Dark
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
-        <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
-        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
-      </svg>
-    </label>
-    <label for="light-theme" id="light-theme-label" class="theme-label click-buttons">
-      Light
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-sun-fill" viewBox="0 0 16 16">
-        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
-      </svg>
-    </label>
   </div>
-  <footer>
-    <a href="https://www.linkedin.com/in/goen-choi-4299522b3/" target="_blank">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="m-3 bi bi-linkedin" viewBox="0 0 16 16">
+  <!--Resume download button-->
+  <a href="goen_resume.pdf" target="_blank" class="click-buttons" id="resume-button">Download resume</a>
+  <!--Skills progress bar-->
+  <div class="progress-bar-container scroll">
+    <h3 class="m-5">Languages</h3>
+    <!--Progress bar for Java-->
+    <div class="progress-bar" id="java-progress-bar">
+      <h4>Java</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plug-fill plug" viewBox="0 0 16 16">
+        <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.08 2.08 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.92 1.92 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0"/>
+      </svg>
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+        <div class="progress-bar-status" id="java-progress-bar-status" style="width:0"></div>
+      </div>
+    </div>
+    <!--Progress bar for HTML-->
+    <div class="progress-bar" id="html-progress-bar">
+      <h4>HTML & CSS</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plug-fill plug" viewBox="0 0 16 16">
+        <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.08 2.08 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.92 1.92 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0"/>
+      </svg>
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+        <div class="progress-bar" style="width: 0" id="html-progress-bar-status"></div>
+      </div>
+    </div>
+    <!--Progress bar for Python-->
+    <div class="progress-bar" id="py-progress-bar">
+      <h4>Python</h4>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-plug-fill plug" viewBox="0 0 16 16">
+        <path d="M6 0a.5.5 0 0 1 .5.5V3h3V.5a.5.5 0 0 1 1 0V3h1a.5.5 0 0 1 .5.5v3A3.5 3.5 0 0 1 8.5 10c-.002.434-.01.845-.04 1.22-.041.514-.126 1.003-.317 1.424a2.08 2.08 0 0 1-.97 1.028C6.725 13.9 6.169 14 5.5 14c-.998 0-1.61.33-1.974.718A1.92 1.92 0 0 0 3 16H2c0-.616.232-1.367.797-1.968C3.374 13.42 4.261 13 5.5 13c.581 0 .962-.088 1.218-.219.241-.123.4-.3.514-.55.121-.266.193-.621.23-1.09.027-.34.035-.718.037-1.141A3.5 3.5 0 0 1 4 6.5v-3a.5.5 0 0 1 .5-.5h1V.5A.5.5 0 0 1 6 0"/>
+      </svg>
+      <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+        <div id="py-progress-bar-status" class="progress-bar" style="width: 0"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="Projects" class="scroll">
+  <h1 class="text-center mb-5">Projects</h1>
+  <div class="container">
+    <div class="row" data-masonry='{"percentPosition": true }'>
+      <!--project1-->
+      <div class="col-12 col-md-6 col-xl-4 card-container">
+        <div class="card">
+          <!--Card has front and back to have flip animation-->
+          <div class="card-front">
+            <img src="images/raspberry-pi-project%20copy.jpeg" class="card-img-top"
+                    alt="Image of Raspberry Pi project.">
+            <div class="card-body">
+              <h4>Counting Pi</h4>
+            </div>
+          </div>
+          <div class="card-back">
+            <h4>Counting Pi</h4>
+            <p>
+              This was one of my lab projects for my operating systems course. I set up a Raspbian operating system on
+              the
+              raspberry pi. Wrote a program that counts up when I pushed the button on the Pi, and different color LED
+              light
+              would turn on depending on if the current number is even, odd, or the power of two.
+            </p>
+            <a href="https://github.com/cgoen/raspberry-pi-lab" target="_blank"><p>Click here to view my code on
+              GitHub!</p></a>
+          </div>
+        </div>
+      </div>
+      <!--project2-->
+      <div class="col-12 col-md-6 col-xl-4 card-container">
+        <div class="card">
+          <!--Card has front and back to have flip animation-->
+          <div class="card-front">
+            <img src="images/vnc_access.png" class="card-img-top" alt="Image of VNC server access project.">
+            <div class="card-body">
+              <h4>VNC Server Access</h4>
+            </div>
+          </div>
+          <div class="card-back">
+            <h4>VNC Server Access</h4>
+            <p>
+              This was another project of my operating systems course. I installed a Linux operating system on the
+              school
+              computer and set up a secure-shell access to this server.
+              Then I installed a VNC server software on this computer to allow remote access to this server with the
+              ability
+              to view the desktop display of the server.
+            </p>
+            <a href="images/vnc-server-access-video.mp4" target="_blank"><p>Click here to see a clip of my project in
+              action!</p></a>
+          </div>
+        </div>
+      </div>
+      <!--project3-->
+      <div class="col-12 col-md-6 col-xl-4 card-container">
+        <div class="card">
+          <!--Card has front and back to have flip animation-->
+          <div class="card-front">
+            <img src="images/mid-term-project.png" class="card-img-top" alt="Image of mid term website project.">
+            <div class="card-body">
+              <h4>Green Tea Website</h4>
+            </div>
+          </div>
+          <div class="card-back">
+            <h4>Green Tea Website</h4>
+            <p>
+              This was a midterm project for my web development class, and it is the very first web-site I made!
+              This project involved choosing a content and building a website from scratch using HTML and CSS.
+              It was my first attempt at responsive design to different media screen sizes. Through this project, I
+              developed my
+              HTML, CSS and design skills.
+            </p>
+            <!--link to project-->
+            <a href="https://deepblue.camosun.bc.ca/~c0543503/Goen_Choi_Midterm/" target="_blank"><p>Click here to view
+              the webpage!</p></a>
+          </div>
+        </div>
+      </div>
+      <!--project 4-->
+      <div class="col-12 col-md-6 col-xl-4 card-container">
+        <div class="card">
+          <!--Card has front and back to have flip animation-->
+          <div class="card-front">
+            <img src="images/pokemon.jpg" class="card-img-top" alt="Image of Pikachu figure.">
+            <div class="card-body">
+              <h4>Pokemon Game Simulation with Object-Oriented Programming</h4>
+            </div>
+          </div>
+          <div class="card-back">
+            <h4>Pokemon Game Simulation with Object-Oriented Programming</h4>
+            <p>
+              I created this Pokemon game simulation using Java and Objected Oriented Programming.
+              This involved creating classes for Pokemons, Trainers, and Battle. The simulation allows to create trainer
+              objects
+              and create Pokemon objects and add it to the trainer's team. Also, it can simulate battles between
+              different Pokemons.
+            </p>
+            <!--link to project-->
+            <a href="https://github.com/cgoen/Pokemon.java" target="_blank"><p>Click here to view this project on
+              GitHub!</p></a>
+          </div>
+        </div>
+      </div>
+      <!--project5-->
+      <div class="col-12 col-md-6 col-xl-4 card-container">
+        <div class="card">
+          <!--Card has front and back to have flip animation-->
+          <div class="card-front">
+            <img src="images/work-schedule.png" class="card-img-top" alt="Image of work schedule.">
+            <div class="card-body">
+              <h4>Future Project - Work Schedule Webpage</h4>
+            </div>
+          </div>
+          <div class="card-back">
+            <h4>Future Project - Work Schedule Webpage</h4>
+            <p>
+              I would like to develop a webpage for my workplace. Currently, my work uses Excel spreadsheet that you can
+              only access while on work-site ,which makes it difficult
+              to view your schedule from home. This webpage will allow easier access to the schedule from anywhere and
+              allow staff to submit
+              shift change request to the manager.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--project6-->
+      <div class="col-12 col-md-6 col-xl-4 card-container">
+        <div class="card">
+          <!--Card has front and back to have flip animation-->
+          <div class="card-front">
+            <img src="images/vacation-picks.jpg" class="card-img-top" alt="Image of person writing in calendar.">
+            <div class="card-body">
+              <h4>Future Project - Vacation Picks Calendar App</h4>
+            </div>
+          </div>
+          <div class="card-back">
+            <h4>Future Project - Vacation Picks Calendar App</h4>
+            <p>
+              Future project I have in mind is a vacation pick calendar app for my workplace.
+              This app would allow the manager to enter in staffs' seniority and allow the app to decide which staff
+              gets
+              their pick depending on their seniority. It'll also allow staff to see their's and other's vacation picks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="Contact" class="text-center scroll">
+  <form id="contact-form">
+    <h1>Contact Me</h1>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" placeholder="First name" id="name">
+      </div>
+      <div class="col-12 col-md-6">
+        <label for="email">E-mail</label>
+        <input type="email" class="form-control" placeholder="E-mail" id="email">
+      </div>
+      <div class="col-12">
+        <label for="message">Message</label>
+        <textarea class="form-control" placeholder="Send me a message!" id="message"></textarea>
+        <button type="submit" id="submit-button" class="click-buttons my-3">Send!</button>
+      </div>
+    </div>
+  </form>
+</section>
+<!--Light/Dark theme labels-->
+<div class="theme-change-labels">
+  <label for="dark-theme" id="dark-theme-label" class="theme-label click-buttons">
+    Dark
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill"
+            viewBox="0 0 16 16">
+      <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+      <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+    </svg>
+  </label>
+  <label for="light-theme" id="light-theme-label" class="theme-label click-buttons">
+    Light
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-sun-fill"
+            viewBox="0 0 16 16">
+      <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+    </svg>
+  </label>
+</div>
+<footer>
+  <!--LinkedIn link-->
+  <a href="https://www.linkedin.com/in/goen-choi-4299522b3/" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="m-3 bi bi-linkedin"
+            viewBox="0 0 16 16">
       <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
     </svg>
-    </a>
-    <a href="https://github.com/cgoen">
-      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="m-3 bi bi-github" viewBox="0 0 16 16">
+  </a>
+  <!--GitHub link-->
+  <a href="https://github.com/cgoen" target="_blank">
+    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="m-3 bi bi-github"
+            viewBox="0 0 16 16">
       <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
     </svg>
-    </a>
-    <a href="mailto:goyun6127@gmail.com?">goyun6127@gmail.com</a>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </a>
+  <!--email link-->
+  <a href="mailto:goyun6127@gmail.com?" class="mx-2">goyun6127@gmail.com</a>
+</footer>
+<!--script for masonry and bootstrap-->
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+        integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+        async></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 </html>
