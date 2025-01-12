@@ -175,7 +175,7 @@ h2, h3 {
   }
 }
 
-section:not(#Contact) {
+section:not(#Contact, #Projects) {
   padding: 7rem 1rem 1rem 1rem;
   min-height: 100vh;
 }
@@ -380,9 +380,14 @@ section:not(#Contact) {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 50vh;
+  padding-top: 5em;
 }
 
 .card-container {
+  /*Center projects in project section*/
+  display: flex;
+  justify-content: center;
   /*give card-container a 3D perspective depth for flip animation on hover*/
   perspective: 1000px;
 }
