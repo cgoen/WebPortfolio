@@ -393,6 +393,8 @@ section:not(#Contact, #Projects) {
 }
 
 .card {
+  min-width: 27rem;
+  max-width: 50rem;
   margin: 0.5rem;
   box-shadow: -1px 1px 20px 1px var(--sky-blue);
   /*preserve the 3D depth of parent card-container*/
@@ -440,7 +442,7 @@ section:not(#Contact, #Projects) {
   transform: rotateY(-180deg);
 }
 
-.card-container:hover .card {
+.card-container:hover .card{
   transform: rotateY(-180deg);
   backface-visibility: visible;
 }
@@ -558,11 +560,11 @@ footer svg {
 }
 
 /*Footer elements hover effect*/
-footer svg:hover, footer a:hover {
+footer svg:hover{
   color: var(--light-pink);
   cursor: pointer;
   transform: scale(1.1);
-  transition: scale 0.3s ease;
+  transition: scale 0.3s ease; 
 }
 
 footer a {
